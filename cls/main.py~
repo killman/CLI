@@ -12,7 +12,7 @@ class main():
     def prompt(self):
     
         while True:
-           userinput = raw_input(host +  " #> ")
+           userinput = input(host +  " #> ")
            spl = userinput
     
            if spl == "show user":

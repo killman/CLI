@@ -57,3 +57,5 @@ class main():
            if spl == 'show ip public':
                  os.system('curl ifconfig.me')
 
+           if spl == 'show run':
+                 os.system('pfctl -sr')
