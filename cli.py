@@ -3,7 +3,6 @@
 
 from cls.main import main
 import os
-host = 'Router'
 initialization=main()
 initialization.init()
 
