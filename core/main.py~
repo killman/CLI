@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import cmd
+import argparse
+import os
+from show.show
+host="Router"
+spl=""
+class main():
+    def init(self):
+        os.system('clear && cat motd')
+
+    def prompt(self):
+    
+        while True:
+           userinput = input(host +  ": ")
+           spl = userinput
+           if spl == "config":
+                exit() 
+           else:
+                show()
+

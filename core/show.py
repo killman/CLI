@@ -1,20 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-import cmd
-import argparse
 import os
-host="Router"
-class main():
-    def init(self):
-        os.system('clear && cat motd')
+def show(spl):
 
-    def prompt(self):
-    
-        while True:
-           userinput = input(host +  " #> ")
-           spl = userinput
-    
            if spl == "show user":
                user = os.getlogin()
                print (user)
@@ -56,4 +44,7 @@ class main():
            
            if spl == 'show ip public':
                  os.system('curl ifconfig.me')
+
+           if spl == 'show run':
+                 os.system('pfctl -sr')
 
