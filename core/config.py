@@ -3,7 +3,5 @@
 import os
 def config(spl):
 
-    if spl == "config user":
-        user = os.getlogin()
-        print (user)
-
+     if spl == 'ip add':
+         print ('') 
